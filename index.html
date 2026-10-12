@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryNest | Stories Worth Living</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101019;
+      color: #f7f3ff;
+    }
+    header {
+      padding: 22px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #302d40;
+    }
+    .logo { font-size: 25px; font-weight: bold; color: #d6a6ff; }
+    nav a {
+      color: #ddd5eb;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 65px 6% 45px;
+      background: linear-gradient(135deg, #27203e, #101019);
+    }
+    .tag { color: #d6a6ff; font-size: 13px; letter-spacing: 2px; }
+    h1 { font-size: 42px; line-height: 1.12; margin: 15px 0; }
+    .hero p { color: #c8bfd7; line-height: 1.7; max-width: 470px; }
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 13px 20px;
+      background: #c995ff;
+      color: #171020;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main { padding: 30px 6%; }
+    h2 { margin-bottom: 8px; }
+    .sub { color: #aaa2b8; font-size: 14px; }
+    .stories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .card {
+      background: #1b1927;
+      border: 1px solid #353044;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .cover {
+      height: 115px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font-size: 42px;
+      background: linear-gradient(135deg, #49336c, #20203d);
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #bcb4ca; line-height: 1.6; font-size: 14px; }
+    .author { color: #d6a6ff; font-size: 12px; }
+    footer {
+      padding: 28px 6%;
+      color: #aaa2b8;
+      border-top: 1px solid #302d40;
+      font-size: 13px;
+    }
+    @media (max-width: 420px) {
+      h1 { font-size: 34px; }
+      nav a { margin-left: 7px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">StoryNest ✦</div>
+    <nav>
+      <a href="#stories">Stories</a>
+      <a href="#writers">Writers</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="tag">YOUR NEXT FAVOURITE STORY STARTS HERE</div>
+    <h1>Enter a world<br>of endless stories.</h1>
+    <p>Discover unforgettable adventures, meet amazing writers, and find stories that stay with you long after the last page.</p>
+    <a class="button" href="#stories">Explore Stories →</a>
+  </section>
+
+  <main id="stories">
+    <h2>Stories to get lost in</h2>
+    <p class="sub">Handpicked worlds from the StoryNest community.</p>
+
+    <div class="stories">
+      <article class="card">
+        <div class="cover">🌙</div>
+        <h3>The Letter at Midnight</h3>
+        <div class="author">By Amara James</div>
+        <p>A mysterious letter arrives every night. Each one reveals a secret someone would kill to protect.</p>
+      </article>
+
+      <article class="card">
+        <div class="cover">🐉</div>
+        <h3>Kingdom of Ash</h3>
+        <div class="author">By Daniel Cole</div>
+        <p>An exiled warrior returns to a fallen kingdom to face the darkness that destroyed his home.</p>
+      </article>
+
+      <article class="card">
+        <div class="cover">💌</div>
+        <h3>When We Meet Again</h3>
+        <div class="author">By Tobi Williams</div>
+        <p>Two strangers share their deepest thoughts through letters without ever knowing each other's names.</p>
+      </article>
+    </div>
+  </main>
+
+  <main id="writers">
+    <h2>Every writer has a story.</h2>
+    <p class="sub">StoryNest is being built for writers and readers everywhere. Your story deserves a home.</p>
+    <a class="button" href="mailto:hello@storynest.example">Become a Storyteller</a>
+  </main>
+
+  <footer>
+    © 2026 StoryNest · A home for stories and storytellers.
+  </footer>
+</body>
+  </html>
